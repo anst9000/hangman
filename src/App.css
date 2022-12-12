@@ -1,0 +1,112 @@
+.container {
+  width: 800px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.top-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.drawing {
+  position: relative;
+}
+
+.body-part {
+  background: black;
+  position: absolute;
+}
+
+.arm {
+  width: 100px;
+  height: 10px;
+  top: 150px;
+}
+
+.left-arm {
+  right: 10px;
+  rotate: 30deg;
+  transform-origin: right bottom;
+}
+
+.right-arm {
+  right: -100px;
+  rotate: -30deg;
+  transform-origin: left bottom;
+}
+
+.leg {
+  width: 100px;
+  height: 10px;
+  top: 210px;
+}
+
+.left-leg {
+  right: -90px;
+  rotate: 60deg;
+  transform-origin: left bottom;
+}
+
+.right-leg {
+  right: 0px;
+  rotate: -60deg;
+  transform-origin: right bottom;
+}
+
+.body {
+  height: 100px;
+  width: 10px;
+  top: 120px;
+  right: 0px;
+}
+.head {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+}
+
+.top-pole {
+  height: 50px;
+  width: 10px;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.top-bar {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+}
+.pole {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+
+.bottom-bar {
+  height: 10px;
+  width: 250px;
+  background: black;
+}
+
+/* HangmanWord */
+.word-wrapper {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
